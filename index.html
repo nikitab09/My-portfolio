@@ -3,7 +3,10 @@
 <head>
 <title>Nikita Borgohain | Portfolio</title>
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
+
 body{
     margin:0;
     font-family:Arial;
@@ -16,6 +19,7 @@ nav{
     padding:15px;
     text-align:center;
 }
+
 nav a{
     color:white;
     margin:15px;
@@ -25,7 +29,7 @@ nav a{
 
 /* Sections */
 section{
-    padding:60px;
+    padding:60px 20px;
     text-align:center;
 }
 
@@ -34,19 +38,23 @@ section{
     color:white;
 }
 
+/* Container */
 .container{
-    width:80%;
+    max-width:1000px;
     margin:auto;
 }
 
+/* Cards */
 .card{
     background:white;
-    margin:20px;
+    margin:20px auto;
     padding:20px;
     border-radius:10px;
     box-shadow:0 0 10px rgba(0,0,0,0.2);
+    width:80%;
 }
 
+/* Skills */
 .skill{
     display:inline-block;
     background:#0077ff;
@@ -69,7 +77,42 @@ button{
     color:white;
     border:none;
     cursor:pointer;
+    border-radius:5px;
 }
+
+/* =====================
+   MOBILE RESPONSIVE
+===================== */
+
+@media(max-width:768px){
+
+nav a{
+    display:block;
+    margin:10px 0;
+}
+
+.card{
+    width:95%;
+}
+
+input,textarea{
+    width:90%;
+}
+
+section{
+    padding:40px 10px;
+}
+
+h1{
+    font-size:26px;
+}
+
+h2{
+    font-size:22px;
+}
+
+}
+
 </style>
 </head>
 
@@ -99,7 +142,6 @@ button{
 <a href="resume.pdf" download>
 <button>Download Resume</button>
 </a>
-
 </section>
 
 <!-- About -->
